@@ -174,4 +174,5 @@ Feedstock Maintainers
 =====================
 
 * [@kmod](https://github.com/kmod/)
+* [@undingen](https://github.com/undingen/)
 
