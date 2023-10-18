@@ -16,7 +16,7 @@ source:
     folder: pyston/LuaJIT/
 
 build:
-  number: 2
+  number: 3
 
   skip: True  # [not unix]
   skip: True  # [py!=38]
