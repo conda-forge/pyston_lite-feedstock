@@ -18,7 +18,7 @@ source:
 build:
   number: 2
 
-  skip: True  # [not linux]
+  skip: True  # [not linux or (python_impl == "pypy") or py>311]
 
 # In theory the requirements can/should be specified per-output, but in practice
 # conda-build will produce a corrupt package if the compiler dependency is not
