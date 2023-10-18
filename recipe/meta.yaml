@@ -19,7 +19,6 @@ build:
   number: 2
 
   skip: True  # [not linux]
-  skip: True  # [py!=38]
 
 # In theory the requirements can/should be specified per-output, but in practice
 # conda-build will produce a corrupt package if the compiler dependency is not
