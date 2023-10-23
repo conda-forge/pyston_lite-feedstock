@@ -94,5 +94,6 @@ about:
 extra:
   feedstock-name: pyston_lite
   recipe-maintainers:
+    - borchero
     - kmod
     - undingen
