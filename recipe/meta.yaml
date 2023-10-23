@@ -1,5 +1,5 @@
 {% set name = "pyston_lite" %}
-{% set pyston_version = "2.3.4" %}
+{% set pyston_version = "2.3.5" %}
 
 package:
   name: {{ name|lower }}-split
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/pyston/pyston/archive/pyston_{{ pyston_version }}.tar.gz
-    sha256: 9989ce0f3a83611b11f79121d29ceec84c3cb4b4a8c3de4f8d97eb42042f4cee
+    sha256: 2a099e8d931d1da65d9394036c489fa767f680704efb5aa47b629958c3847059
   # pyston-lite uses a preprocessing script from inside the LuaJIT repository (that is not
   # packaged as part of the luajit package), but only as a build tool (ie is not included
   # in the built artifacts).
@@ -16,7 +16,7 @@ source:
     folder: pyston/LuaJIT/
 
 build:
-  number: 2
+  number: 0
 
   skip: True  # [not linux]
   skip: True  # [py!=38]
