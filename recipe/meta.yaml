@@ -38,24 +38,13 @@ outputs:
   - name: pyston_lite
     # This 'script' line must go under 'outputs', not 'build'
     script: build_pyston_lite.sh
-
-    # An "build" section is required, or else it seems to skip
-    # the build in certain build scenarios:
-    build:
-      # This build section cannot be empty or else it will crash the linter
-      script: true
-
     requirements:
       build:
         # (See comment for the top-level requirements block)
         - {{ compiler('c') }}
         # NB: listing a "python" dependence in this section will cause the package to misbuild
       host:
-        # pyston-lite is also tightly coupled to the CPython implementation, having compatibility
-        # requirements much higher than API compatibility, so pin it to CPython.
-        - python 3.8.* *_cpython  # [py==38]
-        - python 3.9.* *_cpython  # [py==39]
-        - python 3.10.* *_cpython  # [py==310]
+        - python
         - make
       run:
         - python
@@ -65,16 +54,14 @@ outputs:
         - pyston_lite
 
   - name: pyston_lite_autoload
-
     build:
       # This 'script' line must go under 'build', not 'outputs'
       script: cd pyston/pyston_lite/autoload; python setup.py install -v
-      noarch: python
-
     requirements:
       host:
         - python
       run:
+        - python
         - {{ pin_subpackage('pyston_lite', exact=True) }}
 
     test:
