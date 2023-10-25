@@ -16,7 +16,7 @@ source:
     folder: pyston/LuaJIT/
 
 build:
-  number: 2
+  number: 3
   skip: True  # [not linux or py>310]
 
 # In theory the requirements can/should be specified per-output, but in practice
@@ -51,11 +51,11 @@ outputs:
         - {{ compiler('c') }}
         # NB: listing a "python" dependence in this section will cause the package to misbuild
       host:
-        # Note: pinning to 3.8.* is required even with the skip py!=38 line above, which seems
-        # to not always be honored.
         # pyston-lite is also tightly coupled to the CPython implementation, having compatibility
         # requirements much higher than API compatibility, so pin it to CPython.
-        - python <3.11 *_cpython
+        - python 3.8.* *_cpython  # [py==38]
+        - python 3.9.* *_cpython  # [py==39]
+        - python 3.10.* *_cpython  # [py==310]
         - make
       run:
         - python
