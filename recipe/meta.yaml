@@ -40,12 +40,10 @@ outputs:
     script: build_pyston_lite.sh
     requirements:
       build:
-        # (See comment for the top-level requirements block)
         - {{ compiler('c') }}
-        # NB: listing a "python" dependence in this section will cause the package to misbuild
+        - make
       host:
         - python
-        - make
       run:
         - python
 
