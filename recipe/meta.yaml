@@ -16,7 +16,7 @@ source:
     folder: pyston/LuaJIT/
 
 build:
-  number: 3
+  number: 4
   skip: True  # [not linux or py>310]
 
 # In theory the requirements can/should be specified per-output, but in practice
@@ -49,12 +49,12 @@ outputs:
 
     test:
       imports:
-        - pyston_lite
+        - pyston
 
   - name: pyston_lite_autoload
     build:
       # This 'script' line must go under 'build', not 'outputs'
-      script: cd pyston/pyston_lite/autoload; python setup.py install -v
+      script: cd pyston/pyston_lite/autoload; PYSTON_LITE_NAME=pyston python setup.py install -v
     requirements:
       host:
         - python
@@ -64,7 +64,7 @@ outputs:
 
     test:
       commands:
-        - python -c "import sys; assert 'pyston_lite' in sys.modules"
+        - python -c "import sys; assert 'pyston' in sys.modules"
 
 about:
   home: https://github.com/pyston/pyston
