@@ -16,7 +16,7 @@ source:
     folder: pyston/LuaJIT/
 
 build:
-  number: 3
+  number: 4
   skip: True  # [not linux or py>310]
 
 # In theory the requirements can/should be specified per-output, but in practice
