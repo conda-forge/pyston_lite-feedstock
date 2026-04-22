@@ -36,13 +36,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyston_lite-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.10.____cpython" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>linux_64_python3.9.____cpython</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16609&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pyston_lite-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_python3.9.____cpython" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
@@ -56,8 +49,8 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pyston_lite-green.svg)](https://anaconda.org/conda-forge/pyston_lite) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyston_lite.svg)](https://anaconda.org/conda-forge/pyston_lite) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyston_lite.svg)](https://anaconda.org/conda-forge/pyston_lite) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyston_lite.svg)](https://anaconda.org/conda-forge/pyston_lite) |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-pyston_lite_autoload-green.svg)](https://anaconda.org/conda-forge/pyston_lite_autoload) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyston_lite_autoload.svg)](https://anaconda.org/conda-forge/pyston_lite_autoload) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyston_lite_autoload.svg)](https://anaconda.org/conda-forge/pyston_lite_autoload) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyston_lite_autoload.svg)](https://anaconda.org/conda-forge/pyston_lite_autoload) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyston__lite-green.svg)](https://anaconda.org/conda-forge/pyston_lite) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyston_lite.svg)](https://anaconda.org/conda-forge/pyston_lite) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyston_lite.svg)](https://anaconda.org/conda-forge/pyston_lite) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyston_lite.svg)](https://anaconda.org/conda-forge/pyston_lite) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pyston__lite__autoload-green.svg)](https://anaconda.org/conda-forge/pyston_lite_autoload) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pyston_lite_autoload.svg)](https://anaconda.org/conda-forge/pyston_lite_autoload) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pyston_lite_autoload.svg)](https://anaconda.org/conda-forge/pyston_lite_autoload) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pyston_lite_autoload.svg)](https://anaconda.org/conda-forge/pyston_lite_autoload) |
 
 Installing pyston_lite
 ======================
